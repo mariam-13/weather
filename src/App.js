@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search';
+import CurrentDay from './components/CurrentDay';
+import HourDay from './components/HourDay';
+import Week from './components/Week';
+import { useState } from 'react';
 
 function App() {
+  const [search, setSearch] = useState();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search setSearch={setSearch} />
+      <div className="wraper">
+        <div>
+          <CurrentDay city={search} />
+        </div>
+        <div>
+          <Week city={search} />
+        </div>
+      </div>
+      <div>
+        <HourDay city={search} />
+      </div>
     </div>
   );
 }

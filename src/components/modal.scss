@@ -1,0 +1,36 @@
+.modal {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(78, 68, 61, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-text {
+  background-color: ghostwhite;
+  width: 500px;
+  height: 500px;
+  position: relative;
+
+  button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .hours {
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-right: 5px;
+            }
+  }
+}

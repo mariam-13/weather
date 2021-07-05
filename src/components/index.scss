@@ -1,0 +1,27 @@
+.App {
+    text-align: center;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Hour {
+    background-color: rgb(240, 69, 69);
+  }
+  .wraper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .days {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-right: 5px;
+    }
+  }
+  
+  img {
+    width: 53px;
+  }
